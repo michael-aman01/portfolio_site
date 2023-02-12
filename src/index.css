@@ -4,10 +4,69 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
+  height: 100vh;
+  width: 100vw;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#work-button {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  top:60%;
+  position: absolute;
+  border: 1px solid white;
+  width: 7%;
+  left: 40%;
+  right: 50%;
+  height: 50px;
+  padding-top: 10px;
+
+  cursor: pointer;
+}
+#message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0%;
+}
+
+#name-container {
+  color: red;
+}
+#particles-container {
+  width: 10%;
+}
+#info-container {
+  color: white;
+  font-size: 50px;
+  display: flex;
+  width: 100%;
+  text-align: left;
+  top:50%;
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+  right: 30%;
+  animation:  fadeIn 5s;
+}
+
+#work-button:hover{
+  background-color: green;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
