@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect } from 'react';
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-
+import image from "./image.svg"
 export default function ParticlesBackground(){
     const particlesInit = useCallback(async engine => {
         console.log(engine);
@@ -23,7 +23,7 @@ export default function ParticlesBackground(){
 
       options={{
         "fullScreen": {
-            "enable": true,
+            "enable": false,
             "zIndex": 1
         },
         "particles": {
@@ -92,51 +92,27 @@ export default function ParticlesBackground(){
                 }
             }
         },
-        "interactivity": {
-            "events": {
-                "onhover": {
-                    "enable": false,
-                    "mode": ["grab"]
-                },
-                "onclick": {
-                    "enable": true,
-                    "mode": "grab"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 400,
-                    "line_linked": {
-                        "opacity": 1
-                    }
-                },
-                "bubble": {
-                    "distance": 400,
-                    "size": 40,
-                    "duration": 2,
-                    "opacity": .2,
-                    "speed": 3
-                },
-                "repulse": {
-                    "distance": 200
-                },
-                "push": {
-                    "particles_nb": 4
-                },
-                "remove": {
-                    "particles_nb": 2
-                }
-            }
-        },
+
+ 
         "retina_detect": true,
         "background": {
             "color": "#111",
-            "image": "",
+            "image": "./image.svg",
             "position": "50% 50%",
             "repeat": "no-repeat",
             "size": "cover"
-        }
+        },
+        "polygon": {
+            "draw": {
+              
+              "enable": true,
+
+            },
+            "inlineArrangement":"equidistant",
+            "scale": 0.5,
+            "type": "inline",
+            "url": "https://particles.js.org/images/smalldeer.svg"
+          }
     }}/>
             </div>
         </>
