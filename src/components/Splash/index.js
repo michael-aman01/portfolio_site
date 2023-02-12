@@ -21,8 +21,8 @@ export default function Splash(){
         <>
             <div id="info-container">
                     <div id="message-container">
-                        <div>Hello, I am <span id="name-container">Michael Aman</span></div>
-                       <div>I'm a full-stack web developer.</div>
+                        <div id="message-1">Hello, I am <span id="name-container">Michael Aman</span></div>
+                       <div id="message-2">I'm a full-stack web developer.</div>
                     </div>    
             </div>
             <div id="work-button"  onClick={handleContentChange}  onMouseEnter={() => arrow === downArrow ? setArrow(rightArrow) : setArrow(downArrow)} onMouseLeave={() => arrow === downArrow ? setArrow(rightArrow) : setArrow(downArrow)}>

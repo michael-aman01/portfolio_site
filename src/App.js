@@ -6,7 +6,7 @@ import IndexPage from './components/IndexPage';
 import { useEffect, useState } from 'react';
 import About from './components/About';
 import Splash from './components/Splash';
-
+import { Blocks, InfinitySpin } from 'react-loader-spinner'
 function App() {
 
     const [loaded,setLoaded] = useState(false)
@@ -29,9 +29,17 @@ function App() {
     }else{
         return (
             <>
-                <div>
+                <div id="loader-container">
+            <div>
+            <Blocks
+                width='300'
+                height='300'
+                color="#4fa94d"
+                />
+            </div>
+      
 
-                    LOADING...
+    
                 </div>
             </>
         )

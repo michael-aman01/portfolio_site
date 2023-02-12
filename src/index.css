@@ -23,8 +23,8 @@ code {
   position: absolute;
   border: 1px solid white;
   width: 7%;
-  left: 40%;
-  right: 50%;
+  left: 30%;
+  right: 30%;
   height: 50px;
   padding-top: 10px;
 
@@ -54,16 +54,32 @@ code {
   bottom: 50%;
   left: 30%;
   right: 30%;
-  animation:  fadeIn 5s;
+
 }
 
 #work-button:hover{
-  background-color: green;
+  background-color: rgb(141, 158, 141);
+}
+#loader-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+ 
+  background-color: black;
 }
 
-svg:hover {
-  transition: 2s;
+#message-1 {
+  animation: fadeIn 2s;
 }
+
+#message-2{
+
+  animation: fadeIn 10s;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
