@@ -6,7 +6,15 @@ import Keywi from './keywi_cropped.jpg'
 import stock from './stock_cropped.jpg'
 import ParticlesBackground from "../ParticlesBackground";
 export default function ProjectsIndex(){
-
+    const siteLinks = {
+        "keywi":"https://keywi.onrender.com",
+        "mybnb":"https://mybnb.onrender.com",
+        "stock":"https://michael-aman01.github.io/StockScreenerJS/"
+    }
+    const handleSiteClick = e => {
+        e.preventDefault()
+        window.open(siteLinks[e.target.id],"_blank")
+    }
     useEffect(() => {
 
         let delay = setTimeout(() => {
@@ -85,7 +93,7 @@ export default function ProjectsIndex(){
                                 </p>
                             </div>
                             <br></br>
-                            <button className="project-item-button">
+                            <button className="project-item-button"  id="keywi" onClick={handleSiteClick}>
                                 visit site
                             </button>
                         </div>
@@ -101,7 +109,7 @@ export default function ProjectsIndex(){
                                 </p>
                             </div>
                             <br></br>
-                            <button className="project-item-button">visit site</button>
+                            <button className="project-item-button" id="mybnb" onClick={handleSiteClick}>visit site</button>
                         </div>
      
                     </div>
@@ -116,7 +124,7 @@ export default function ProjectsIndex(){
                                 </p>
                             </div>
                             <br></br>
-                            <button className="project-item-button">visit site</button>
+                            <button className="project-item-button" id="stock" onClick={handleSiteClick}>visit site</button>
                         </div>
      
 

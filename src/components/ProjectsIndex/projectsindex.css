@@ -88,6 +88,7 @@
     font-size: 20px;
     width: 20%;
     margin-left: 40%;
+    border: 1px solid red;
 }
 
 .project-text:hover {
