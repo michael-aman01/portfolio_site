@@ -1,0 +1,142 @@
+#projects-container {
+    width: 100vw;
+    height: 100%;
+    color: white;
+    background-color: rgb(29 74 85);
+    display: grid;
+    grid-template-rows: repeat(10,auto);
+    grid-template-columns: repeat(10,auto);
+    background-color: #252934;
+    overflow: scroll;
+}
+
+.grid-header{
+    grid-row-start: 3;
+    grid-row-end:3;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 5%;
+    font-family: "raleway";
+    display: flex;
+    line-height: 1.6;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    font-family: "raleway";
+}
+
+.grid-container {
+    grid-row-start: 4;
+    grid-row-end: 10;
+
+    grid-column-start: 2;
+    grid-column-end: 9;
+
+    display: grid;
+    grid-template-rows: repeat(10,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+}
+
+.project-item{
+    height: 100%;
+    margin-top: 20%;   
+    animation: transition-in 1s;
+    padding-left: 10%;
+    animation-iteration-count: 1;
+    position: relative;
+}
+.project-item-entered{
+    height: 100%;
+    margin-top: 20%;   
+    position: relative;
+    font-size: 50px;
+    padding-left: 10%;
+
+    
+}
+
+.project-text {
+    background-color: transparent;
+    color: red;
+    margin-left: 10%;
+    font-size: 40px;
+    height: 80%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    font-family: "raleway";
+    justify-content: center;
+}
+.app-details {
+    font-size: 20px;
+    color: black;
+}
+.app-description {
+    text-align: center;
+}
+.project-item-button {
+    background-color: transparent;
+    font-size: 20px;
+    width: 20%;
+    margin-left: 40%;
+    border: 1px solid red;
+}
+
+.project-text:hover {
+    animation: show .5s;
+
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;    /* FF 5+ */
+    -o-animation-fill-mode: forwards;      /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;     /* IE 10+ */
+    animation-fill-mode: forwards;    
+}
+
+
+
+@keyframes show{
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+ 
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+
+    }
+    to {
+        opacity: 0;
+ 
+    }
+}
+
+
+
+img {
+    background-color: white;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+}
+@keyframes transition-in {
+    from {
+        transform: translateX(-400%);
+    } to {
+        transform: translateX(0%);
+    }
+}

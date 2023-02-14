@@ -1,10 +1,11 @@
-import './projectsindex.css'
+
 import React, { useEffect } from 'react'
 import Navigation from '../Navbar'
 import MyBNB from './mybnb_cropped.jpg'
 import Keywi from './keywi_cropped.jpg'
 import stock from './stock_cropped.jpg'
 import ParticlesBackground from "../ParticlesBackground";
+// import './projectsindex.css'
 export default function ProjectsIndex(){
     const siteLinks = {
         "keywi":"https://keywi.onrender.com",
@@ -74,7 +75,7 @@ export default function ProjectsIndex(){
     return (
         <>
          <Navigation></Navigation>
-
+            <div>
             <div id="projects-container">
           
                 <div className='grid-header'>
@@ -129,7 +130,11 @@ export default function ProjectsIndex(){
      
 
                     </div>
+ 
                 </div>
+   
+            </div>
+
             </div>
         </>
     )
