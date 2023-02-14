@@ -7,6 +7,7 @@ body {
   height: 100vh;
   width: 100vw;
   -moz-osx-font-smoothing: grayscale;
+  
   overflow-y: hidden;
   font-family: "raleway";
 }
@@ -94,10 +95,11 @@ button .mdi {
 
 #message-1 {
   animation: fadeIn 2s;
+  background-color: rgba(0, 0, 0, 0.267);
 }
 
 #message-2{
-
+  background-color: rgba(0, 0, 0, 0.267);
   animation: fadeIn 10s;
 }
 

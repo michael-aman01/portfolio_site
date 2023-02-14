@@ -1,12 +1,17 @@
 .nav-container {
-    background-color: black;
+    background-color:#252934;
     width: 100vw;
 
     border-bottom: 1px solid white;
-    transition: height 10s;
-    transition-timing-function: linear;
+    animation: nav-transition 1s;
+
 }
 
-.nav-item {
-    color:  white;
+@keyframes nav-transition {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
 }

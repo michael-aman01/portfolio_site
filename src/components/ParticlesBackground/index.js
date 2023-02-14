@@ -108,10 +108,7 @@ export default function ParticlesBackground(){
         "retina_detect": true,
         "background": {
             "color": "#111",
-            "image": "./image.svg",
-            "position": "50% 50%",
-            "repeat": "no-repeat",
-            "size": "cover"
+      
         }
     }}/>
             </div>

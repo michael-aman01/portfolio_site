@@ -10,14 +10,14 @@ export default function IndexPage(){
     const sections = {
         "/splash" : <Splash/>,
         "/about": <About/>
-        
+
     }
 
 
     return (
         <>
         <ParticlesBackground></ParticlesBackground>
-            <div id={content}>
+            <div id={content} >
 
                 {sections[content]}
         

@@ -11,7 +11,7 @@ export default function Navigation(){
         <div className="nav-container">
 
         <Container>
-        <Navbar collapseOnSelect expand="lg" bg="black" variant="dark">
+        <Navbar collapseOnSelect expand="lg"  variant="dark">
       <Navbar.Brand href="#home">
             Michael Aman
       </Navbar.Brand>
