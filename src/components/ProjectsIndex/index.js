@@ -69,13 +69,20 @@ export default function ProjectsIndex(){
 
             <div id="projects-container">
           
-                <div className='grid-header'>projects</div>
+                <div className='grid-header'>
+                    Projects
+                </div>
+            
                 <div className='grid-container'>
+          
                 <div className='project-item' id="keywi" >
                         <img height="350px" src={Keywi}></img>
                         <div  className='project-text'>
-                            <div>
-                                KeyWi
+                            <div className='app-description'>
+                                <p>KeyWi</p>
+                                <p className='app-details'>
+                                ReactJS and MongoDB/ExpressJS
+                                </p>
                             </div>
                             <br></br>
                             <button className="project-item-button">
@@ -87,8 +94,11 @@ export default function ProjectsIndex(){
                     <div className='project-item' id="mybnb">
                         <img  height="350px" src={MyBNB} ></img>
                         <div  className='project-text'>
-                            <div>
-                                MyBNB
+                        <div className='app-description'>
+                                <p>MyBNB</p>
+                                <p className='app-details'>
+                                ReactJS and Rails 5/PostgreSQL
+                                </p>
                             </div>
                             <br></br>
                             <button className="project-item-button">visit site</button>
@@ -99,8 +109,11 @@ export default function ProjectsIndex(){
                     <div className='project-item' id="stock">
                         <img  height="350px" src={stock} id="stock-img"></img>
                         <div  className='project-text'>
-                            <div>
-                                StockPickerJS
+                        <div className='app-description'>
+                                <p>StockPickerJS</p>
+                                <p className='app-details'>
+                                JavaScript/ChartJS
+                                </p>
                             </div>
                             <br></br>
                             <button className="project-item-button">visit site</button>

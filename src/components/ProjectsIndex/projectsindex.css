@@ -16,8 +16,11 @@
     grid-column-start: 2;
     grid-column-end: 9;
     color: white;
-
+    text-decoration: underline;
+    text-decoration-thickness: 5%;
+    font-family: "raleway";
     display: flex;
+    line-height: 1.6;
     justify-content: center;
     text-align: center;
     font-size: 50px;
@@ -58,20 +61,28 @@
 .project-text {
     background-color: transparent;
     color: red;
+    margin-left: 10%;
     font-size: 40px;
     height: 80%;
     width: 100%;
     opacity: 0;
     top: 0;
-    left: 10;
+    left: 0;
     background-color: white;
     position: absolute;
     text-align: center;
     display: flex;
     flex-direction: column; 
+    font-family: "raleway";
     justify-content: center;
 }
-
+.app-details {
+    font-size: 20px;
+    color: black;
+}
+.app-description {
+    text-align: center;
+}
 .project-item-button {
     background-color: transparent;
     font-size: 20px;
