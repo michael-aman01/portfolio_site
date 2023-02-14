@@ -1,0 +1,45 @@
+#projects-container {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-color: black;
+    display: grid;
+    grid-template-rows: repeat(10,auto);
+    grid-template-columns: repeat(10,auto);
+
+}
+
+.grid-header{
+    grid-row-start: 3;
+    grid-row-end:3;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    color: white;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    font-family: "raleway";
+}
+
+.grid-container {
+    grid-row-start: 4;
+    grid-row-end: 10;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    background-color: blue;
+    display: grid;
+    grid-template-rows: repeat(10,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.project-item{
+    background-color: green;
+
+    border: 10px solid black;
+    padding: 10%;
+    height: 100%;
+    margin:10%;
+}
+

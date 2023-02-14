@@ -1,0 +1,12 @@
+.nav-container {
+    background-color: black;
+    width: 100vw;
+
+    border-bottom: 1px solid white;
+    transition: height 10s;
+    transition-timing-function: linear;
+}
+
+.nav-item {
+    color:  white;
+}

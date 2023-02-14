@@ -2,8 +2,13 @@ import React from "react";
 import { useState, useEffect } from "react";
 import downArrow from "./downArrow.svg"
 import rightArrow from "./rightArrow.svg"
+import Icon from '@mdi/react';
+import { useHistory } from "react-router-dom";
+
+import { mdiAccount, mdiArrowRightBoldOutline} from '@mdi/js';
 export default function Splash(){
-    const [arrow,setArrow] = useState(rightArrow)
+    const history = useHistory()
+    const [arrow,setArrow] = useState(0)
     const [buttonColor, setButtonColor] = useState("red")
  
     useEffect(() => {
@@ -13,8 +18,7 @@ export default function Splash(){
     },[arrow])
 
     const handleContentChange = e => {
-        let content = document.getElementById("/splash")
-        console.log(content)
+        history.push("/projects")
     }
 
     return (
@@ -25,13 +29,15 @@ export default function Splash(){
                        <div id="message-2">I'm a full-stack web developer.</div>
                     </div>    
             </div>
-            <div id="work-button"  onClick={handleContentChange}  onMouseEnter={() => arrow === downArrow ? setArrow(rightArrow) : setArrow(downArrow)} onMouseLeave={() => arrow === downArrow ? setArrow(rightArrow) : setArrow(downArrow)}>
-                    <div>projects</div>
-                    <div >
-                    <img style={{"height":"100%"}} src={arrow}></img>
-                    </div>
+            <button  id="work-button"  onClick={handleContentChange}  onMouseEnter={() => setArrow(90)} onMouseLeave={() => setArrow(0)}>
+                    Projects
+ 
+                    
+              
+                    <Icon  id="arrow" path={mdiArrowRightBoldOutline} size={1} rotate={arrow}/>
+              
                 
-            </div>
+            </button>
         </>
     )
 }

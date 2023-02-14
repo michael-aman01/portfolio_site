@@ -10,6 +10,7 @@ export default function IndexPage(){
     const sections = {
         "/splash" : <Splash/>,
         "/about": <About/>
+        
     }
 
 

@@ -8,6 +8,7 @@ body {
   width: 100vw;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: hidden;
+  font-family: "raleway";
 }
 
 code {
@@ -16,7 +17,7 @@ code {
 }
 #work-button {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   display: flex;
   justify-content: space-around;
   top:60%;
@@ -26,9 +27,28 @@ code {
   left: 30%;
   right: 30%;
   height: 50px;
-  padding-top: 10px;
-
+  padding: 10px;
+  width: fit-content;
   cursor: pointer;
+}
+button .mdi {
+  vertical-align: center;
+  transform:rotate(90deg);
+}
+
+.mdi {
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform:rotate(90deg);
+
+}
+
+.mdi {
+  transition: transform 10s;
 }
 #message-container {
   display: flex;
@@ -46,6 +66,7 @@ code {
 #info-container {
   color: white;
   font-size: 50px;
+  font-family: "raleway";
   display: flex;
   width: 100%;
   text-align: left;

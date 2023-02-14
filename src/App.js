@@ -5,8 +5,11 @@ import ParticlesBackground from './components/ParticlesBackground';
 import IndexPage from './components/IndexPage';
 import { useEffect, useState } from 'react';
 import About from './components/About';
+import { Switch, Route} from 'react-router-dom';
 import Splash from './components/Splash';
 import { Blocks, InfinitySpin } from 'react-loader-spinner'
+import { RotateDirection } from 'tsparticles-engine';
+import ProjectsIndex from './components/ProjectsIndex';
 function App() {
 
     const [loaded,setLoaded] = useState(false)
@@ -21,10 +24,21 @@ function App() {
 
     if(loaded){
         return (
-            <div className="App">
-                 <IndexPage></IndexPage>
+           <Switch>
+            <Route exact path="/">
+            <IndexPage></IndexPage>
+            </Route>
+            
+            <Route path="/about">
+                <About></About>
+            </Route>
+            <Route path="/projects">
+                <ProjectsIndex></ProjectsIndex>
+            </Route>
+           </Switch>
+
               
-            </div>
+      
         );
     }else{
         return (

@@ -28,11 +28,12 @@ export default function ParticlesBackground(){
         },
         "particles": {
             "number": {
-                "value": 100,
+                "value": 70,
                 "density": {
                     "enable": false,
                     "value_area": 800
                 }
+
             },
             "color": {
                 "value": "#fff"
@@ -41,6 +42,10 @@ export default function ParticlesBackground(){
                 "type": "polygon",
             
             },
+            "repulse": {
+                "distance": 500,
+                "duration": 0.5
+              },
             "opacity": {
                 "value": 0.3,
                 "random": false,
@@ -90,9 +95,15 @@ export default function ParticlesBackground(){
                     "rotateX": 600,
                     "rotateY": 1200
                 }
-            }
-        },
+            },
+            "events": {
+                "onhover": {
+                  "enable": true,
+                  "mode": "repulse"
+                },
 
+        },
+    },
  
         "retina_detect": true,
         "background": {
@@ -101,18 +112,7 @@ export default function ParticlesBackground(){
             "position": "50% 50%",
             "repeat": "no-repeat",
             "size": "cover"
-        },
-        "polygon": {
-            "draw": {
-              
-              "enable": true,
-
-            },
-            "inlineArrangement":"equidistant",
-            "scale": 0.5,
-            "type": "inline",
-            "url": "https://particles.js.org/images/smalldeer.svg"
-          }
+        }
     }}/>
             </div>
         </>
